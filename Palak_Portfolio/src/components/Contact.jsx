@@ -31,12 +31,15 @@ const Contact = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          access_key: 'cd5ec061-38d8-4fcb-ab1e-24bab002b7d8',
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-          subject: `New Portfolio Contact from ${formData.name}`
-        }),
+        access_key: "cd5ec061-38d8-4fcb-ab1e-24bab002b7d8",
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+        subject: `New Portfolio Contact from ${formData.name}`,
+        from_name: "Portfolio Contact Form",
+        replyto: formData.email,
+        redirect: false
+      }),
       });
 
       const result = await response.json();
