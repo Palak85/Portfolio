@@ -1,5 +1,5 @@
 👩‍💻 Palak — Personal Portfolio
-🔗 Live Website:
+🔗 Live Website:  https://portfolio-ot0u7o9i7-palak-kumaris-projects.vercel.app/
 👉 Portfolio
 
 This is my personal portfolio website designed to showcase my projects, technical skills, and background as a developer. The site provides recruiters and collaborators with a quick overview of my work and capabilities.
