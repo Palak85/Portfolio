@@ -111,7 +111,7 @@ export const certificates = [
     title: "Responsive Web Design",
     issuer: "FreeCodeCamp",
     category: "Web Development",
-    pdf: "/certs/palak freecodecamp.pdf",
+    pdf: "/certs/palak freecodecamp certificate.pdf",
     image: freecodecamp
   },
   {
@@ -125,7 +125,7 @@ export const certificates = [
     title: "C Programming Language",
     issuer: "CSE Pathshala",
     category: "Programming",
-    pdf: "/certs/PalakCsePAthshala.pdf",
+    pdf: "/certs/PalakCsePathshala.pdf",
     image: c
   },
   {
@@ -139,7 +139,7 @@ export const certificates = [
     title: "DSA Certificate",
     issuer: "Data Structures & Algorithms",
     category: "Programming",
-    pdf: "/certs/PAlak_DS.pdf",
+    pdf: "/certs/Palak_DSA.pdf",
     image: dsa
   },
   {
@@ -161,21 +161,21 @@ export const certificates = [
     issuer: "Infosys Springboard",
     image: Masterai,
     category: "others",
-    pdf: "/certs/public/certs/Palak-Master_Generative_AI&Generative_AI_tools(ChatGpt& more)-Infosys.pdf"
+    pdf: "/certs/palak-MasterAi.pdf"
   },
   {
     title: "Computational Theory: Language Principle & Finite Automata Theory ",
     issuer: "Infosys Springboard",
     image: computationalTheory,
     category: "others",
-    pdf: "/certs/public/certs/Palak-_computational-theory_infosys.pdf"
+    pdf: "/certs/Palak_computional-theory_infosys.pdf"
   },
   {
     title: "Crud Operations",
     issuer: "MongoDB University",
     image: Crud,
     category: "others",
-    pdf: "/certs/public/certs/Palak-Cmongodb-Crud_Operations.pdf"
+    pdf: "/certs/Palak-mongodb-Crud_operations.pdf"
   },
   // {
   //   title: "Relational to Document Model",
