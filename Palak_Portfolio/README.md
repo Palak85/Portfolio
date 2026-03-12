@@ -1,7 +1,7 @@
-# 👩‍💻 Dhriti Gupta — Personal Portfolio
+# 👩‍💻 Palak — Personal Portfolio
 
 🔗 **Live Website:**  
-👉 [Portfolio](https://dhriti-gupta-portfolio.netlify.app/)
+👉 [Portfolio](https://portfolio-db9ymbdzy-palak-kumaris-projects.vercel.app/)
 
 This is my personal portfolio website designed to showcase my projects, technical skills, and background as a developer. The site provides recruiters and collaborators with a quick overview of my work and capabilities.
 
