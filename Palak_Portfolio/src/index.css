@@ -1,0 +1,304 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #10b981;
+}
+
+/* Base Variables (Light Mode) */
+:root {
+  --bg-primary: #f8fafc;
+  --bg-tertiary: #ffffff;
+  --text-main: #0f172a;
+  --text-secondary: #475569;
+  --border-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Mode Override */
+.dark {
+  --bg-primary: #050816;
+  --bg-tertiary: #151030;
+  --text-main: #ffffff;
+  --text-secondary: #aaa6c3;
+  --border-color: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Animated Mesh Gradient Background (Green) */
+body::before {
+  content: '';
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -2;
+  background: 
+    radial-gradient(ellipse at 0% 0%, rgba(16,185,129,0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 100% 100%, rgba(16,185,129,0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 100% 0%, rgba(5,150,105,0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 0% 100%, rgba(52,211,153,0.25) 0%, transparent 50%);
+  animation: meshGradient 15s ease-in-out infinite;
+  filter: blur(60px);
+}
+
+@keyframes meshGradient {
+  0%, 100% { 
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  25% { 
+    transform: translate(5%, 5%) rotate(90deg) scale(1.1);
+  }
+  50% { 
+    transform: translate(-5%, 5%) rotate(180deg) scale(0.9);
+  }
+  75% { 
+    transform: translate(-5%, -5%) rotate(270deg) scale(1.05);
+  }
+}
+
+/* Particle Effect (Green) */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: 
+    radial-gradient(2px 2px at 20% 30%, rgba(16,185,129,0.35), transparent),
+    radial-gradient(2px 2px at 60% 70%, rgba(16,185,129,0.35), transparent),
+    radial-gradient(1px 1px at 50% 50%, rgba(16,185,129,0.25), transparent),
+    radial-gradient(1px 1px at 80% 10%, rgba(16,185,129,0.35), transparent),
+    radial-gradient(2px 2px at 90% 60%, rgba(16,185,129,0.30), transparent),
+    radial-gradient(1px 1px at 33% 90%, rgba(16,185,129,0.35), transparent),
+    radial-gradient(1px 1px at 10% 80%, rgba(16,185,129,0.30), transparent);
+  background-size: 200% 200%;
+  animation: particleFloat 20s ease-in-out infinite;
+}
+
+@keyframes particleFloat {
+  0%, 100% { 
+    background-position: 0% 0%, 100% 100%, 50% 50%, 80% 20%, 10% 90%, 30% 70%, 70% 30%;
+    opacity: 0.6;
+  }
+  25% { 
+    background-position: 100% 0%, 0% 100%, 30% 70%, 90% 10%, 20% 80%, 60% 40%, 40% 60%;
+    opacity: 0.8;
+  }
+  50% { 
+    background-position: 100% 100%, 0% 0%, 70% 30%, 10% 90%, 90% 10%, 40% 60%, 60% 40%;
+    opacity: 0.7;
+  }
+  75% { 
+    background-position: 0% 100%, 100% 0%, 50% 50%, 20% 80%, 80% 20%, 70% 30%, 30% 70%;
+    opacity: 0.9;
+  }
+}
+
+/* Grid Animation */
+/* ===== GRID BACKGROUND ===== */
+
+.grid-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -5;
+  pointer-events: none;
+
+  background-image:
+    linear-gradient(rgba(16,185,129,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16,185,129,0.08) 1px, transparent 1px);
+
+  background-size: 60px 60px;
+
+  animation: gridMove 25s linear infinite;
+}
+
+/* grid movement */
+@keyframes gridMove {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 60px;
+  }
+}
+/* Moving Grid Background */
+/* ===== STARFIELD BACKGROUND ===== */
+
+.starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -4;
+  pointer-events: none;
+}
+
+.starfield::before,
+.starfield::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background-image:
+    radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,0.7), transparent),
+    radial-gradient(2px 2px at 40% 70%, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1px 1px at 60% 50%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(2px 2px at 80% 20%, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1px 1px at 90% 80%, rgba(255,255,255,0.7), transparent),
+    radial-gradient(2px 2px at 30% 90%, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1px 1px at 70% 10%, rgba(255,255,255,0.8), transparent);
+  background-size: 50% 50%;
+  animation: starMove 60s linear infinite;
+}
+
+/* ===== DENSE STARFIELD ===== */
+
+.starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -4;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.starfield::before,
+.starfield::after {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 300%;
+
+  background-image:
+    radial-gradient(2px 2px at 5% 10%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(2px 2px at 15% 40%, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 25% 70%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(2px 2px at 35% 20%, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 45% 50%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(2px 2px at 55% 80%, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 65% 30%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(2px 2px at 75% 60%, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 85% 90%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(2px 2px at 95% 40%, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 20% 90%, rgba(255,255,255,0.8), transparent),
+    radial-gradient(2px 2px at 60% 10%, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 80% 70%, rgba(255,255,255,0.8), transparent);
+
+  background-size: 40% 40%;
+  animation: starMove 80s linear infinite;
+}
+
+.starfield::after {
+  opacity: 0.5;
+  animation-duration: 120s;
+}
+
+@keyframes starMove {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+/* Universal Background Glow */
+.bg-animate {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at 50% 50%, var(--color-accent) 0%, transparent 50%);
+  opacity: 0.05;
+  filter: blur(80px);
+  animation: move 15s infinite alternate;
+}
+
+@keyframes move {
+  0% { transform: translate(-20%, -20%); }
+  100% { transform: translate(20%, 20%); }
+}
+
+/* Helpers */
+.bg-theme-main { background-color: var(--bg-primary); }
+.bg-theme-card { background-color: var(--bg-tertiary); }
+.text-theme-main { color: var(--text-main); }
+.text-theme-secondary { color: var(--text-secondary); }
+.border-theme { border-color: var(--border-color); }
+
+
+/* Hide default cursor */
+body {
+  cursor: none;
+}
+
+/* Custom circle cursor */
+.cursor-circle {
+  position: fixed;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #10b981; /* emerald color */
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.08s ease-out;
+  z-index: 9999;
+}
+
+/* ===== MOUSE SPOTLIGHT ===== */
+
+.mouse-light {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  pointer-events: none;
+  z-index: -2;
+
+  background: radial-gradient(
+    circle,
+    rgba(16,185,129,0.15) 0%,
+    transparent 60%
+  );
+
+  filter: blur(80px);
+  transform: translate(-50%, -50%);
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-animation {
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+
+@keyframes floatCard {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0px); }
+}
+
+.float-card {
+  animation: floatCard 6s ease-in-out infinite;
+}
