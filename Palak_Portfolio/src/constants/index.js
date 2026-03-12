@@ -15,7 +15,7 @@ import ai from '../assets/images/AiAgentHackthon.png'
 import indexedDB from '../assets/images/IndexingMongodb.png'
 import Masterai from '../assets/images/MasterGenerativeAi.png'
 import Crud from '../assets/images/CrudMongodb.png'
-import computationalTheory from '../assets/images/computationalTheory.png'
+import computationalTheory from '../assets/images/ComputationalTheory.png'
 import { MessageCircle, Users, Brain, Star, Clock } from "lucide-react";
 
 export const skillCategories = ["All", "Languages", "Frameworks", "Tools", "Databases", "Backend", "Soft Skills"];
