@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Lottie from 'lottie-react';
 import { ChevronDown } from 'lucide-react';
-import profilePhoto from '../assets/images/Palaks.jpeg';
+import profilePhoto from '../assets/images/palaks.jpeg';
 // Import your animation file
 import robotAnimation from '../assets/animations/hello.json';
 import { magneticEffect, resetMagnet } from "../utils/magneticEffect";
