@@ -53,7 +53,7 @@ const Education = () => {
             {/* Card */}
             <div className="bg-tertiary/30 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-xl hover:border-emerald-500/40 transition">
 
-              <h3 className="text-xl font-bold text-white">
+              <h3 className="text-xl font-bold dark:text-white-500">
                 {item.degree}
               </h3>
 
