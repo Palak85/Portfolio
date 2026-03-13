@@ -57,7 +57,7 @@ const Achievements = () => {
               </div>
 
               {/* Title */}
-              <h3 className="text-lg font-bold text-white mb-3">
+              <h3 className="text-lg font-bold dark:text-white-500 mb-3">
                 {item.title}
               </h3>
 
