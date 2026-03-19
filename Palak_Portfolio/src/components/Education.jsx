@@ -40,7 +40,7 @@ const Education = () => {
       </div>
 
       {/* Timeline */}
-      <div className="max-w-4xl mx-auto relative border-l border-white/10">
+      <div className="max-w-4xl mx-auto relative border-l border-white/10 light:text-black/10">
 
         {education.map((item, index) => (
           <div key={index} className="mb-12 ml-8">
