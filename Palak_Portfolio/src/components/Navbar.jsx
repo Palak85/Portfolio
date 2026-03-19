@@ -6,7 +6,7 @@ const Navbar = () => {
   const navLinks = [
     { id: "about", title: "About" },
     { id: "skills", title: "Skills" },
-    { id: "projects", title: "Work" },
+    { id: "projects", title: "Projects" },
     { id: "certificates", title: "Certificates" },
     { id: "contact", title: "Contact" },
   ];
