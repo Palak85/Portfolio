@@ -54,7 +54,7 @@ export const projects = [
     category: "Web Development",
     image: smartcurriculum, 
     github: "https://github.com/Palak85/Smart_Curriculum_Attendance_App",
-    live: "https://student-management-system-main-two.vercel.app/admin-dashboard"
+    live: "https://smart-curriculum-attendance-app-1.onrender.com/"
   },
   {
     name: "The Restaurant Order Management System",
