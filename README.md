@@ -18,6 +18,7 @@ This is my personal portfolio website designed to showcase my projects, technica
 📫 Contact section
 ⚡ Fast loading and clean UI
 🎯 Recruiter-friendly layout
+
 🛠️ Tech Stack Used
 Frontend:
 
