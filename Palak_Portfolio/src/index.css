@@ -15,8 +15,8 @@
 
 /* Dark Mode Override */
 .dark {
-  --bg-primary: #050816;
-  --bg-tertiary: #151030;
+  --bg-primary: #050609;
+  --bg-tertiary: #080a09;
   --text-main: #ffffff;
   --text-secondary: #aaa6c3;
   --border-color: rgba(255, 255, 255, 0.05);
