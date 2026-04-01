@@ -18,7 +18,7 @@ import Crud from '../assets/images/CrudMongodb.png'
 import computationalTheory from '../assets/images/ComputationalTheory.png'
 import { MessageCircle, Users, Brain, Star, Clock } from "lucide-react";
 
-export const skillCategories = ["All", "Languages", "Frameworks", "Tools", "Databases", "Backend", "Soft Skills"];
+export const skillCategories = ["All", "Languages", "Frameworks", "Tools", "Databases", "Backend", "UI/UX", "Soft Skills"];
 
 export const skills = [
   { name: "C++", category: "Languages", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
@@ -35,6 +35,8 @@ export const skills = [
   { name: "MongoDB", category: "Databases", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
   { name: "NodeJs", category: "Backend", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
   { name: "PHP", category: "Backend", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
+  { name: "Figma", category: "UI/UX", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+{ name: "Canva", category: "UI/UX", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" },
   { name: "Communication", category: "Soft Skills", icon: MessageCircle },
   { name: "Teamwork", category: "Soft Skills", icon: Users },
   { name: "Problem Solving", category: "Soft Skills", icon: Brain },
